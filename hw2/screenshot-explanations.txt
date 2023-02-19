@@ -11,3 +11,9 @@
 6. Invoking slack-request from command line
 
 7. Invoking slack-interactive from gateway
+
+Extra Credit: 
+
+8. Calling /coen241 command in slack app - shows slack-request json response
+
+9. Interacting with command response by clicking a button - shows slack-interactive json response
