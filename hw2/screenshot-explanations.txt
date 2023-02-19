@@ -1,0 +1,13 @@
+1. Invoking the figlet function from command line
+
+2. Invoking the figlet function from OpenFaaS gateway
+
+3. Running sudo journalctl -u faasd --lines 40
+
+4. OpenFaaS gateway after deploying figlet, slack-request, and slack-interactive functions
+
+5. Invoking slack-request from gateway
+
+6. Invoking slack-request from command line
+
+7. Invoking slack-interactive from gateway

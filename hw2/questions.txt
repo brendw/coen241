@@ -1,0 +1,23 @@
+1. What is the command to invoke the slack-request function?
+	Via Curl
+	$ curl localhost:8080/function/slack-request -d “hw2”
+	Via faas-cli
+	$ echo “hw2” | faas-cli invoke slack-request
+ 
+2. What is the output you see when you invoke the slack-request function? 
+	The JSON response used to create the response to the command when invoked from the Slack App.
+
+3. What is the command to invoke the slack-interactive function? 	Via curl
+	curl localhost:8080/function/slack-interactive -d “AAAA”
+	Via faas-cli
+	echo “AAAA” | faas-cli invoke slack-interactive 
+4. What is the output you see when you invoke the slack-interactive function? 
+	The JSON response used to create the interactive response to the user selecting a button from the slack-request command in the Slack App.
+
+5. How would you pass different arguments to the functions? 
+	> echo "argument" then pipe to invoke command
+	> curl gateway/function -d “argument” 
+
+6. How would you change the slack-interactive function to react to different inputs?
+
+	The function could be changed to parse the response=json.loads(urlstring) and extract the information about the user's interaction to slack-request, such text entered into an input field or a value for the option that was selected. Then the function would do different things given the extracted information to provide different reactions to different inputs. 
